@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body class="p-10 max-w-screen-xl mx-auto">
+    <header class="p-7 bg-cyan-100 rounded-lg">
+        <div class="flex justify-between items-center">
+            <div>
+                <h1 class="text-5xl font-bold text-slate-800">Interactive</h1>
+                <h3 class="text-2xl text-slate-600">Geometry Genius</h3>
+            </div>
+            <div>
+                <button class="btn-primary">Blog</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mt-10 flex gap-5">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="p-10 text-center bg-fuchsia-300 rounded-lg border-2">
+                    <img src="./images/triangle.png" alt="" class="mx-auto h-1/2">
+                    <h2 class="mt-5 text-xl font-semibold text-slate-700" id="shape-name">Triangle</h2>
+                    <h4 class="mt-2 text-slate-600">Area(A) = 0.5 X b X h</h4>
+                    <input type="number" name="" id="base-triangle" placeholder="b" class="mt-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <input type="number" name="" id="height-triangle" placeholder="h" class="ms-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <button class="w-3/4 mx-auto mt-5 btn-primary block" id="btn-triangle">Calculate</button>
+                </div>
+                <div class="p-10 text-center rounded-lg border-2">
+                    <img src="./images/rectangle.png" alt="" class="mx-auto h-1/2">
+                    <h2 class="mt-5 text-xl font-semibold text-slate-700">Rectangle</h2>
+                    <h4 class="mt-2 text-slate-600">Area(A) = w X l</h4>
+                    <input type="number" name="" id="width-rectangle" placeholder="w" class="mt-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <input type="number" name="" id="length-rectangle" placeholder="l" class="ms-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <button class="w-3/4 mx-auto mt-5 btn-primary block" id="btn-rectangle">Calculate</button>
+                </div>
+                <div class="p-10 text-center rounded-lg border-2">
+                    <img src="./images/parallelogram.png" alt="" class="mx-auto h-1/2">
+                    <h2 class="mt-5 text-xl font-semibold text-slate-700">Parallelogram</h2>
+                    <h4 class="mt-2 text-slate-600">Area(A) = b X h</h4>
+                    <input type="number" name="" id="base-parallelogram" placeholder="b" class="mt-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <input type="number" name="" id="height-parallelogram" placeholder="h" class="ms-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <button class="w-3/4 mx-auto mt-5 btn-primary block" id="btn-parallelogram">Calculate</button>
+                </div>
+                <div class="p-10 text-center rounded-lg border-2 bg-sky-300">
+                    <img src="./images/rhombus.png" alt="" class="mx-auto h-1/2">
+                    <h2 class="mt-5 text-xl font-semibold text-slate-700">Rhombus</h2>
+                    <h4 class="mt-2 text-slate-600">Area(A) = 0.5 X d<sub>1</sub> x d<sub>2</sub> </h4>
+                    <input type="number" name="" id="diagonal1" placeholder="d1" class="mt-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <input type="number" name="" id="diagonal2" placeholder="d2" class="ms-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <button class="w-3/4 mx-auto mt-5 btn-primary block" id="btn-rhombus">Calculate</button>
+                </div>
+                <div class="p-10 text-center rounded-lg border-2">
+                    <img src="./images/pentagon.png" alt="" class="mx-auto h-1/2">
+                    <h2 class="mt-5 text-xl font-semibold text-slate-700">Pentagon</h2>
+                    <h4 class="mt-2 text-slate-600">Area(A) = 0.5 x p x b</h4>
+                    <input type="number" name="" id="p-pentagon" placeholder="p" class="mt-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <input type="number" name="" id="b-pentagon" placeholder="b" class="ms-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <button class="w-3/4 mx-auto mt-5 btn-primary block" id="btn-pentagon">Calculate</button>
+                </div>
+                <div class="p-10 text-center rounded-lg border-2">
+                    <img src="./images/ellipse.png" alt="" class="mx-auto h-1/2">
+                    <h2 class="mt-5 text-xl font-semibold text-slate-700">Ellipse</h2>
+                    <h4 class="mt-2 text-slate-600">Area(A) = &pi;ab</h4>
+                    <input type="number" name="" id="a-ellipse" placeholder="a" class="mt-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <input type="number" name="" id="b-ellipse" placeholder="b" class="ms-4 px-2 w-14 rounded-md bg-slate-200">
+                    <p class="inline">cm</p>
+                    <button class="w-3/4 mx-auto mt-5 btn-primary block" id="btn-ellipse">Calculate</button>
+                </div>
+            </div>
+            <div class="p-5 w-2/5 h-96 border-2 rounded-lg">
+                <h3 class="text-center text-xl font-semibold underline">Area Calculation</h3>
+                <ol class="mt-5">
+                    <li class="list-decimal">Triangle<span class="ml-5" id="area-triangle">00</span>cm<sup>2</sup><button class="ml-2 px-3 py-1 bg-blue-500 rounded-lg text-white btn-convert">Convert to m<sup>2</sup></button></li>
+                    <li class="list-decimal mt-3">Rectangle<span class="ml-5" id="area-rectangle">00</span>cm<sup>2</sup><button class="ml-2 px-3 py-1 bg-blue-500 rounded-lg text-white btn-convert">Convert to m<sup>2</sup></button></li>
+                    <li class="list-decimal mt-3">Parallelogram<span class="ml-2" id="area-parallelogram">00</span>cm<sup>2</sup><button class="ml-1 px-3 py-1 bg-blue-500 rounded-lg text-white btn-convert" >Convert to m<sup>2</sup></button></li>
+                    <li class="list-decimal mt-3">Rhombus<span class="ml-5" id="area-rhombus">00</span>cm<sup>2</sup><button class="ml-2 px-3 py-1 bg-blue-500 rounded-lg text-white btn-convert">Convert to m<sup>2</sup></button></li>
+                    <li class="list-decimal mt-3">Pentagon<span class="ml-5" id="area-pentagon">00</span>cm<sup>2</sup><button class="ml-2 px-3 py-1 bg-blue-500 rounded-lg text-white btn-convert">Convert to m<sup>2</sup></button></li>
+                    <li class="list-decimal mt-3">Ellipse<span class="ml-5" id="area-ellipse">00</span>cm<sup>2</sup><button class="ml-2 px-3 py-1 bg-blue-500 rounded-lg text-white btn-convert" >Convert to m<sup>2</sup></button></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/calculation.js"></script>
+</body>
+</html>
